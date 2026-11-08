@@ -643,6 +643,7 @@ body {
 /* ===== CONTAINER UTAMA ===== */
 .container {
 display: flex;
+flex direction: row;
 align-items: flex-start;
 justify-content: center;
 gap: 20px;
