@@ -19,6 +19,54 @@ body {
 }
 
 header {
+    width: 100%;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(8, 98, 136, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 17px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #e1a943;
+}
+
+
+header {
     padding: 20px 30px;
     background: var(--white);
     display: flex;
