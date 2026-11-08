@@ -1,0 +1,400 @@
+:root {
+    --pink: #AFCBE3;
+    --blue: #DCEAF3;
+    --yellow: #F5EBD7;
+    --white: #FFF9EF;
+    --ink: #40566D;
+    --muted: #718096;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--ink);
+    background: #FFF9EF;
+}
+
+header {
+    width: 100%;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(8, 98, 136, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 17px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #e1a943;
+}
+
+
+header {
+    padding: 20px 30px;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #DCEAF3,
+        #FFF9EF,
+        #F5EBD7
+    );
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #40566D;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 10p 20px;
+    border-radius: 10px;
+    background: var(--pink);
+    color: white;
+    text-decoration: none;
+}
+
+.service {
+    padding: 60px 30px;
+    background: #fffdfd;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.dampak {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: var(--pink);
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 10px;
+}
+
+.card h4 {
+    color: #4c91bb;
+}
+
+.card p, .card li {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.card th {
+    background: var(--blue);
+}
+
+.card th, .card td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.card tr:nth-child(even) {
+    background: #eff8ff;
+}
+
+.site-footer {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background: #40566D;
+}
+
+.site-footer a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .dampak {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: #264a81;
+    color: #ffffff;
+    padding: 32px 8px 12px;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.footer * {
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 0.8fr;
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+/* JUDUL */
+.footer h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 12px;
+    color: white;
+    text-align: left;
+}
+
+/* KOLOM IDENTITAS */
+.footer-about {
+    text-align: left;
+}
+
+.footer-logo {
+    width: 38px;
+    height: 38px;
+    background: white;
+    color: #103f32;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.footer-about p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #c7d9d1;
+    max-width: 290px;
+    margin: 0 0 18px;
+    text-align: left;
+}
+
+/* NAVIGASI */
+.footer-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.footer-menu a {
+    font-size: 12px;
+    color: #d6e6df;
+    text-decoration: none;
+}
+
+/* ANGGOTA KELOMPOK */
+.footer-members {
+    text-align: left;
+}
+
+.footer-members h3 {
+    margin-bottom: 12px;
+}
+
+.member-item {
+    width: 100%;
+    min-height: 36px;
+    padding: 7px 9px;
+    margin-bottom: 7px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 9px;
+}
+
+.member-item span {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+/* IKON SOSIAL MEDIA */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons a {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255,255,255,0.10);
+    border: none;
+    border-radius: 6px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* KONTAK */
+.footer-contact {
+    text-align: left;
+}
+
+.footer-contact h3 {
+    margin-bottom: 13px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #d3e3dc;
+    font-size: 12px;
+}
+
+.contact-item i {
+    color: #a8d88b;
+    width: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.contact-item p {
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.contact-item a {
+    color: #d3e3dc;
+    font-size: 12px;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+    border-top: 1px solid rgba(55, 128, 164, 0.13);
+    padding-top: 12px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #b9d0c5;
+    margin: 0;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .footer-contact {
+        grid-column: 1 / -1;
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 480px) {
+    .footer {
+        padding: 25px 16px 12px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .footer-contact {
+        grid-column: auto;
+    }
+}
