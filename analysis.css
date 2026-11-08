@@ -1,0 +1,30 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* CONTAINER ANALYSIS */
+.analysis-container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+    padding: 0 7px;
+}
+
+/* KARTU ANALYSIS */
+.analysis-card {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    min-height: 246px;
+    background-color: #ffffff;
+    padding: 45px 32px;
+    border: 1px solid #dceaf0;
+    border-radius: 19px;
+}
