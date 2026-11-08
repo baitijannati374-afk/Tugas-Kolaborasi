@@ -1,0 +1,144 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* BODY */
+body {
+    background-color: #ffffff;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 17px 5.2%;
+    background-color: #ffffff;
+}
+
+/* HEADER */
+.contact-header h1 {
+    color: #164c3b;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+/* DESKRIPSI */
+.contact-header p {
+    color: #87948e;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    width: 100%;
+    max-width: 700px;
+    background-color: #fafcf9;
+    border: 1px solid #dce8dc;
+    border-radius: 16px;
+    padding: 24px 23px;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* INPUT */
+.contact-form input {
+    width: 100%;
+    height: 34px;
+    padding: 10px;
+    border: 1px solid #d5e3d5;
+    border-radius: 9px;
+    background-color: #ffffff;
+    outline: none;
+    font-size: 12px;
+    color: #315c4b;
+}
+
+/* TEXTAREA */
+.contact-form textarea {
+    width: 100%;
+    height: 101px;
+    padding: 10px;
+    border: 1px solid #d5e3d5;
+    border-radius: 9px;
+    background-color: #ffffff;
+    outline: none;
+    resize: both;
+    font-size: 12px;
+    color: #315c4b;
+}
+
+/* PLACEHOLDER */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #899990;
+}
+
+/* INPUT FOCUS */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #28745a;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: fit-content;
+    padding: 10px 13px;
+    margin-top: 4px;
+    border-radius: 9px;
+    background-color: #237353;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.whatsapp-button:hover {
+    background-color: #164c3b;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE HP */
+@media screen and (max-width: 480px) {
+
+    .contact-section {
+        padding: 22px 5%;
+    }
+
+    .contact-header h1 {
+        font-size: 29px;
+    }
+
+    .contact-header p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .contact-box {
+        padding: 20px 15px;
+    }
+
+    .contact-form input {
+        height: 40px;
+    }
+
+    .contact-form textarea {
+        height: 110px;
+    }
+}
