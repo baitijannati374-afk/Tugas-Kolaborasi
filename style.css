@@ -642,22 +642,25 @@ body {
 
 /* ===== CONTAINER UTAMA ===== */
 .container {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 25px;
-    background: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 5px 20px rgba(25, 70, 40, 0.12);
+display: flex;
+align-items: flex-start;
+justify-content: center;
+gap: 20px;
+width: 100%;
+max-width: 850px;
+margin: 20px auto;
+padding: 20px;
+background: #ffffff;
+border-radius: 18px;
+box-shadow: 0 5px 20px rgba(25, 70, 40, 0.12);
+box-sizing: border-box;
 }
 
 /* ===== BAGIAN GAMBAR ===== */
 .gambar {
-flex: 0 1 360px;
+flex: 0 1 330px;
 width: 100%;
-max-width: 360px;
+max-width: 330px;
 position: sticky;
 top: 20px;
 }
@@ -684,15 +687,23 @@ border: 1px solid #d2d8e8;
 box-sizing: border-box;
 }
 
-/* ===== TAMPILAN HP ===== */
+/* ===== RESPONSIVE HP ===== */
 @media (max-width: 768px) {
+.container {
+flex-direction: column;
+align-items: center;
+padding: 15px;
+}
+
 .gambar {
-position: static;
-max-width: 320px;
+    position: static;
+    max-width: 300px;
 }
 
 .jawaban {
     max-width: 100%;
+}
+
 }
 
 }
