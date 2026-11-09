@@ -67,7 +67,8 @@ header {
     margin: auto;
     padding: 17px 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 30px
     align-items: center;
 }
 
@@ -85,8 +86,9 @@ header {
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
+    padding: O;
 }
 
 .nav-menu a {
