@@ -1201,17 +1201,263 @@ footer {
     padding: 35px 15px;
 }
 
-footer h3 {
-    font-size: 27px;
+.footer {
+    padding: 55px 8% 0;
+    background: #123d2b;
+    color: white;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.footer-brand h3 {
+    margin: 15px 0 10px;
+    font-size: 19px;
+}
+
+.footer p {
+    color: #c3d8c8;
+    font-size: 12px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    color: #b9e3bd;
+    font-size: 17px;
+}
+
+.member-footer {
+    margin-bottom: 20px;
+}
+
+.member-footer h5 {
     margin-bottom: 8px;
+    font-size: 13px;
 }
 
-footer p {
-    font-size: 16px;
-    margin-top: 5px;
-    color: #e2f4ff;
+.social-icons {
+    display: flex;
+    gap: 12px;
 }
 
+.social-icons a {
+    color: #c5e8ca;
+    font-size: 17px;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.footer-contact p {
+    margin-bottom: 15px;
+}
+
+.footer-contact a {
+    color: #c5e8ca;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+}
+
+/* =====================================
+   LIGHTBOX GAMBAR
+===================================== */
+
+.lightbox[hidden] {
+    display: none;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.88);
+}
+
+.lightbox-dialog {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: var(--hijau);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* =====================================
+   RESPONSIVE TABLET
+===================================== */
+
+@media (max-width: 1000px) {
+    .product-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* =====================================
+   RESPONSIVE HP
+===================================== */
+
+@media (max-width: 650px) {
+
+    .nav {
+        min-height: 65px;
+        padding: 10px 5%;
+    }
+
+    .logo {
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .logo img {
+        width: 37px;
+        height: 37px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        border-radius: 5px;
+        background: white;
+    }
+
+    .nav-dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 6%;
+        flex-direction: column;
+        gap: 17px;
+        background: var(--hijau-tua);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+
+    .nav-dropdown.active {
+        display: flex;
+    }
+
+    .hero,
+    .hero-overlay {
+        min-height: 500px;
+    }
+
+    .hero-overlay {
+        padding: 55px 7%;
+        background: linear-gradient(
+            90deg,
+            rgba(5,43,25,0.94),
+            rgba(8,61,34,0.72)
+        );
+    }
+
+    .hero h1 {
+        font-size: clamp(37px,10vw,48px);
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .main,
+    .produk,
+    .team,
+    .contact,
+    #mapel,
+    #masalah {
+        padding: 55px 5%;
+    }
+
+    .content-left {
+        padding: 25px;
+    }
+
+    .content-left h2,
+    .masalah-header h2,
+    .produk-header h2,
+    .team > h2,
+    .contact > h2,
+    .section-title {
+        font-size: 25px;
+    }
+
+    .solusi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 12px;
+    }
+    
 /* RESPONSIVE TABLET */
 @media screen and (max-width: 900px) {
     .navbar {
