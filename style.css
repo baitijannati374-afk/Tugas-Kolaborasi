@@ -1198,7 +1198,7 @@ footer {
     background: var(--dark-blue);
     color: var(--white);
     text-align: center;
-    padding: 35px 15px;
+    padding: 35px 5px;
 }
 
 .footer {
